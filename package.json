@@ -1,0 +1,15 @@
+{
+  "name": "primeira-pwa-app",
+  "version": "1.0.0",
+  "description": "Primeira aplicação pwa, usando vanilla JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ."
+  },
+  "author": "GuilhermeFerreiraTombini",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.0.1"
+  }
+}
