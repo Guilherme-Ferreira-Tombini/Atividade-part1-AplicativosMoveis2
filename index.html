@@ -7,13 +7,39 @@
     <link rel="manifest" href="/manifest.json"/>
     <link rel="apple-touch-icon" href="images/images.jpg"/>
     <meta name="theme-color" content="white"/>
-    <title>Minha primeira PWA</title>
+    <title>IMC</title>
 </head>
 <body class="fullscreen">
   <div class="container">
-    <h1 class="title">Minha primeira PWA</h1>
-  </div>
+   <header>
+    <h1>IMC</h1>
+    <p>Como está minha saúde?</p>
+   </header>
+   <main>
+<div class="formulario">
+  <h5 style="color: white;"><center>Digite seu Nome:</center></h5>
+  <input type="text" id="Nome" placeholder="Digite aqui">
+  <h5 style="color: white;"><center>Digite sua idade:</center></h5>
+  <input type="text" id="Idade" placeholder="Digite aqui">
+  <h5 style="color: white;"><center>Selecione seu sexo abaixo:</center></h5>
+  <select id="sexo">
+      <option value="masculino" selected>Masculino</option>
+      <option value="feminino" selected>Feminino</option>
+  </select>
+  <h5 style="color: white;"><center>Digite sua altura:</center></h5>
+  <input type="text" id="Altura" placeholder="Digite aqui em centimetros(ex:181)">
+  <h5 style="color: white;"><center>Digite seu peso:</center></h5>
+  <input type="text" id="Peso" placeholder="Digite aqui(Ex:75)">
+  <button class="button1" onclick="calcula()">Calcular</button>
+  <button class="button2" onclick="limpar()">Limpar</button>
+</div>
 
+<div>
+<p id="resultado"></p>
+</div>
+
+   </main>
+  </div>
   <script src="js/main.js"></script>
 </body>
 </html>

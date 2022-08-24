@@ -1,19 +1,75 @@
-body{
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
+
+*{
+
+margin: 0;
+padding: 0;
+
+}
+
+body {
+    font-family: 'Padauk', sans-serif;
+    background-color: #35665D;
+    
 }
 
 html, .fullscreen {
-display: flex;
-height: 100%;
-margin: 0;
-padding: 0;
-width: 100%;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
 }
 
-.container{
-    margin: auto;
+.container {
+    display: flex;
+    flex-direction: column;
 }
 
-.title{
-    font-size: 3rem;
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    color:yellow;
+    font-size: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.button1{
+    background-color: yellow;
+    transition: 1s;
+    border-radius: 10px;
+    padding: 10px;
+}
+.button1:hover{
+    background-color: rgb(9, 94, 28);
+    color: rgb(245, 245, 245);
+}
+
+.button2{
+    background-color: yellow;
+    transition: 1s;
+border-radius: 10px;
+padding: 10px;
+}
+.button2:hover{
+    background-color: rgb(255, 0, 0);
+    color: white;
+}
+
+h5{
+    font-size: 15px;
+}
+
+input, select{
+    font-size: 14px;
+    padding: 1px;
+    border-radius: 5px;
 }
