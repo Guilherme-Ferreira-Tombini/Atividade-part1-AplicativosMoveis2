@@ -41,9 +41,11 @@ function limpar(){
     let nome = document.getElementById("Nome");
     let idade = document.getElementById("Idade");
     let sexo = document.getElementById("sexo");
+    let resultado = document.getElementById('resultado');
     altura.value = "";
     peso.value = "";
     nome.value = "";
     idade.value = "";
-    sexo.value = ""
+    sexo.value = "";
+    resultado.innerHTML = "";
 }
