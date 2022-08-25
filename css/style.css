@@ -10,7 +10,6 @@ padding: 0;
 body {
     font-family: 'Padauk', sans-serif;
     background-color: #35665D;
-    
 }
 
 html, .fullscreen {
@@ -25,6 +24,7 @@ html, .fullscreen {
 .container {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 header{
@@ -33,13 +33,17 @@ header{
     align-items: center;
     font-weight: bold;
     color:yellow;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .formulario{
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    margin-top: 30px;
+}
+.formulario h5 {
+    font-size: 22px;
 }
 
 .button1{
@@ -47,6 +51,9 @@ header{
     transition: 1s;
     border-radius: 10px;
     padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: yellow;
 }
 .button1:hover{
     background-color: rgb(9, 94, 28);
@@ -58,6 +65,9 @@ header{
     transition: 1s;
 border-radius: 10px;
 padding: 10px;
+font-size: 20px;
+font-weight: bold;
+border: yellow;
 }
 .button2:hover{
     background-color: rgb(255, 0, 0);
@@ -69,7 +79,26 @@ h5{
 }
 
 input, select{
-    font-size: 14px;
-    padding: 1px;
+    font-size: 20px;
+    padding: 10px;
     border-radius: 5px;
+}
+
+.card{
+    background-color: #FFF0BA;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 20px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#resultado{
+    font-size: 16px;
+    text-align: justify;
+}
+#IMC{
+    margin: 20px;
 }

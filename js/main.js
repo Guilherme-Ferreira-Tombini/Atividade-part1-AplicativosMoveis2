@@ -15,23 +15,29 @@ function calcula(){
     let calculo = peso / (altura * altura);
 
     if(calculo < 18.5){
-        document.getElementById('resultado').innerHTML = "Abaixo do peso Normal"
+        document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está abaixo do peso normal !!"
+        document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       }
       else if (calculo > 18.5 && calculo < 24.9){
-        document.getElementById('resultado').innerHTML = "Peso Normal"
+        document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está com peso normal !!"
+        document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       }
       else if (calculo > 25 && calculo < 29.9){
-        document.getElementById('resultado').innerHTML = "Excesso de Peso"
+        document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está com excesso de peso !!"
+        document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       }
       else if (calculo > 30 && calculo < 34.9) {
-        document.getElementById('resultado').innerHTML = "Obesidade classe I"
+        document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está com obesidade classe I !!"
+        document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       }
       else if (calculo > 35 && calculo < 39.9) {
-        document.getElementById('resultado').innerHTML = "Obesidade classe II"
+        document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está com obesidade classe II !!"
+        document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       }else if (calculo > 39.9) {
-        document.getElementById('resultado').innerHTML = "Obesidade classe III"
+        document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está com obesidade classe III !!"
+        document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       } else{
-        document.getElementById('resultado').innerHTML = "Digite corretamente nos campos"
+        document.getElementById('resultado').innerHTML = "Digite corretamente nos campos !!"
       }
 }
 
@@ -42,10 +48,12 @@ function limpar(){
     let idade = document.getElementById("Idade");
     let sexo = document.getElementById("sexo");
     let resultado = document.getElementById('resultado');
+    let IMC = document.getElementById('IMC');
     altura.value = "";
     peso.value = "";
     nome.value = "";
     idade.value = "";
     sexo.value = "";
     resultado.innerHTML = "";
+    IMC.innerHTML = "-"
 }
