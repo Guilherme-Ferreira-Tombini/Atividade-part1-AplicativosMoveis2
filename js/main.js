@@ -14,7 +14,9 @@ function calcula(){
 
     let calculo = peso / (altura * altura);
 
-    if(calculo < 18.5){
+    if(altura != "" && peso != "" && nome != "" && idade != "" && sexo != ""){
+
+      if(calculo < 18.5){
         document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está abaixo do peso normal !!"
         document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       }
@@ -35,8 +37,8 @@ function calcula(){
         document.getElementById('IMC').innerHTML = calculo.toFixed(2)
       }else if (calculo > 39.9) {
         document.getElementById('resultado').innerHTML = "Paciente cujo o nome é "+ nome + ", do sexo " + sexo +", com "+ idade +" anos, você está com obesidade classe III !!"
-        document.getElementById('IMC').innerHTML = calculo.toFixed(2)
-      } else{
+        document.getElementById('IMC').innerHTML = calculo.toFixed(2)}
+    } else {
         document.getElementById('resultado').innerHTML = "Digite corretamente nos campos !!"
       }
 }
