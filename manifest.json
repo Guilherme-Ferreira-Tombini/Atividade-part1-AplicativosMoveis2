@@ -1,6 +1,6 @@
 {
     "name": "Meu primeiro App Progressiva",
-    "short_name": "Primeira PWA",
+    "short_name": "IMC Calculator",
     "icons":[
            {
             "src": "images/images.png",
